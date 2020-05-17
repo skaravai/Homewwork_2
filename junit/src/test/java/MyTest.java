@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 public class MyTest {
     protected static WebDriver driver;
-    private String baseURL = "https://otus.ru/";
+    private String baseURL = "https://market.yandex.ru/";
     private Logger logger = LogManager.getLogger(MyTest.class);
 
     @Before
@@ -29,7 +29,7 @@ public class MyTest {
     @Test
     public void openPage() {
         driver.get(baseURL);
-        logger.info("Открыта страница отус");
+        logger.info("Открыта страница Яндекс.Маркет");
     }
 
     @After
